@@ -1,0 +1,361 @@
+9,00,00,Quickening-A,50
+9,01,00,Quickening-B,75
+9,02,00,Quickening-C,100
+9,03,00,Quickening-D,125
+9,04,00,Quickening-E,150
+9,05,00,Quickening-F,125
+9,06,00,Quickening-G,125
+9,07,00,Quickening-H,125
+9,08,00,Quickening-I,125
+9,09,00,Quickening-J,125
+9,0A,00,Quickening-K,125
+9,0B,00,Quickening-L,125
+9,0C,00,Quickening-M,125
+9,0D,00,Quickening-N,125
+9,0E,00,Quickening-O,125
+9,0F,00,Quickening-P,125
+9,10,00,Quickening-Q,125
+9,11,00,Quickening-R,125
+B,12,00,Belias,20
+B,13,00,Mateus,30
+B,14,00,Adrammelech,25
+B,15,00,Hashmal,50
+B,16,00,Cúchulainn,50
+B,17,00,Famfrit,90
+B,18,00,Zalera,25
+B,19,00,Shemhazai,50
+B,1A,00,Chaos,90
+B,1B,00,Zeromus,50
+B,1C,00,Exodus,50
+B,1D,00,Ultima,90
+B,1E,00,Zodiark,200
+C,1F,00,Essentials,1,Attack,Item
+3,20,00,Swords 1,15,Broadsword
+3,21,00,Swords 2,25,Longsword,Iron Sword
+3,22,00,Swords 3,35,Zwill Blade,Ancient Sword
+3,23,00,Swords 4,50,Lohegrin,Flametongue
+3,24,00,Swords 5,55,Demonsbane,Icebrand
+3,25,00,Swords 6,60,Platinum Sword,Bastard Sword
+3,26,00,Swords 7,70,Diamond Sword,Runeblade
+3,27,00,Blood Sword,50
+3,28,00,Greatswords 1,50,Claymore
+3,29,00,Greatswords 2,70,Defender,Save the Queen
+3,2A,00,Greatswords 3,80,Ultima Blade
+3,2B,00,Excalibur,135
+3,2C,00,Tournesol,225
+3,2D,00,Katana 1,35,Kotetsu,Osafune
+3,2E,00,Katana 2,50,Kogarasumaru,Magoroku
+3,2F,00,Katana 3,70,Murasame,Kiku-ichimonji
+3,30,00,Katana 4,90,Yakei,Ame-no-Murakumo
+3,31,00,Masamune,130
+0,32,00,Ninja Swords 1,100,Ashura,Sakura-saezuri,Kagenui,Orochi
+0,33,00,Ninja Swords 2,120,Iga Blade
+0,34,00,Yagyu Darkblade & Mesa,180,Koga Blade
+3,35,00,Spears 1,20,Javelin,Spear
+3,36,00,Spears 2,25,Partisan,Heavy Lance
+3,37,00,Spears 3,35,Storm Spear,Obelisk
+3,38,00,Spears 4,50,Halberd,Trident
+3,39,00,Spears 5,60,Holy Lance,Gungnir
+3,3A,00,Dragon Whisker,70
+3,3B,00,Zodiac Spear,240
+0,3C,00,Poles 1,20,Oaken Pole
+0,3D,00,Poles 2,30,Battle Bamboo,Cypress Pole
+0,3E,00,Poles 3,35,Musk Stick,Iron Pole
+0,3F,00,Poles 4,40,Six-fluted Pole,Gokuu Pole
+0,40,00,Poles 5,50,Zephyr Pole,Ivory Pole
+0,41,00,Whale Whisker,90
+3,42,00,Bows 1,20,Shortbow,Silver Bow
+3,43,00,Bows 2,30,Aevis Killer
+3,44,00,Bows 3,35,Longbow,Killer Bow
+3,45,00,Bows 4,45,Elfin Bow,Loxley Bow
+3,46,00,Bows 5,60,Giant Stonebow,Burning Bow
+3,47,00,Bows 6,70,Traitor's Bow,Yoichi Bow
+3,48,00,Sagittarius,130
+0,49,00,Crossbows 1,25,Bowgun,Crossbow
+0,4A,00,Crossbows 2,40,Paramina Crossbow,Recurve Crossbow
+0,4B,00,Crossbows 3,60,Hunting Crossbow,Penetrator Crossbow
+0,4C,00,Crossbows 4,115,Gastrophetes,Tula
+0,4D,00,Guns 1,30,Altair
+0,4E,00,Guns 2,50,Capella,Vega
+0,4F,00,Guns 3,60,Sirius,Betelgeuse
+0,50,00,Guns 4,70,Ras Algethi,Aldebaran
+0,51,00,Guns 5,90,Spica,Antares
+0,52,00,Guns 6,110,Arcturus,Fomalhaut
+3,53,00,Axes & Hammers 1,20,Handaxe
+3,54,00,Axes & Hammers 2,25,Iron Hammer,Broadaxe
+3,55,00,Axes & Hammers 3,35,War Hammer,Slasher
+3,56,00,Axes & Hammers 4,50,Sledgehammer,Hammerhead
+3,57,00,Axes & Hammers 5,60,Francisca,Morning Star
+3,58,00,Axes & Hammers 6,65,Greataxe,Golden Axe
+3,59,00,Axes & Hammers 7,85,Scorpion Tail
+0,5A,00,Daggers 1,15,Dagger
+0,5B,00,Daggers 2,20,Mage Masher,Assassin's Dagger
+0,5C,00,Daggers 3,35,Chopper,Main Gauche
+0,5D,00,Daggers 4,45,Gladius,Avenger
+0,5E,00,Daggers 5,60,Orichalcum Dirk,Platinum Dagger
+0,5F,00,Shikari Nagasa & Mina,220,DC
+1,60,00,Rods 1,20,Rod,Serpent Rod
+1,61,00,Rods 2,30,Healing Rod,Gaia Rod
+1,62,00,Rods 3,40,Power Rod,Empyrean Rod
+1,63,00,Rods 4,50,Holy Rod
+1,64,00,Rod of Faith,130
+1,65,00,Staves 1,15,Oak Staff
+1,66,00,Staves 2,25,Cherry Staff,Wizard Staff
+1,67,00,Staves 3,30,Flame Staff,Storm Staff
+1,68,00,Staves 4,40,Glacial Staff,Golden Staff
+1,69,00,Staff of the Magi,110
+1,6A,00,Maces 1,30,Mace,Bronze Mace
+1,6B,00,Maces 2,40,Bhuj,Miter
+1,6C,00,Maces 3,60,Thorned Mace,Chaos Mace
+1,6D,00,Maces 4,80,Doom Mace,Zeus Mace
+1,6E,00,Maces 5,130,Grand Mace,Bone of Byblos
+1,6F,00,Measures 1,40,Gilt Measure
+1,70,00,Measures 2,50,Arc Scale,Multiscale
+1,71,00,Measures 3,70,Cross Scale,Caliper
+0,72,00,Hand-bombs 1,35,Hornito
+0,73,00,Hand-bombs 2,55,Fumarole,Tumulus
+0,74,00,Hand-bombs 3,75,Cladera,Volcano
+2,75,00,Shields 1,15,Leather Shield,Buckler
+2,76,00,Shields 2,20,Bronze Shield,Round Shield
+2,77,00,Shields 3,25,Golden Shield,Ice Shield,Flame Shield
+2,78,00,Shields 4,30,Diamond Shield,Platinum Shield,Dragon Shield
+2,79,00,Shields 5,35,Crystal Shield,Kaiser Shield
+2,7A,00,Shields 6,40,Aegis Shield,Demon Shield
+2,7B,00,Ensanguined Shield,100
+2,7C,00,Shell Shield,90
+2,7D,00,Zodiac Eschutcheon,235
+2,7E,00,Heavy Armor 1,25,Leather Helm,Bronze Helm,Leather Armor,Bronze Armor
+2,7F,00,Heavy Armor 2,30,Sallet,Iron Helm,Scale Armor,Iron Armor
+2,80,00,Heavy Armor 3,35,Barbut,Winged Helm,Linen Cuirass,Chainmail
+2,81,00,Heavy Armor 4,40,Golden Helm,Burgonet,Golden Armor,Shielded Armor
+2,82,00,Heavy Armor 5,50,Close Helmet,Bone Helm,Demon Mail,Bone Mail
+2,83,00,Heavy Armor 6,55,Diamond Helm,Diamond Armor
+2,84,00,Heavy Armor 7,60,Steel Mask,Mirror Mail
+2,85,00,Heavy Armor 8,65,Platinum Helm,Platinum Armor
+2,86,00,Heavy Armor 9,70,Giant's Helmet,Carabineer Mail
+2,87,00,Heavy Armor 10,80,Dragon Helm,Dragon Mail
+2,88,00,Genji Armor,190,Genji Shield,Genji Helm,Genji Armor,Genji Gloves
+2,89,00,Light Armor 1,10,Leather Cap,Leather Clothing
+2,8A,00,Light Armor 2,15,Headgear,Headguard,Chromed Leathers,Leather Breastplate
+2,8B,00,Light Armor 3,20,Leather Headgear,Horned Hat,Bronze Chestplate,Ringmail
+2,8C,00,Light Armor 4,25,Balaclava,Soldier's Cap,Windbreaker,Heavy Coat
+2,8D,00,Light Armor 5,30,Green Beret,Red Cap,Survival Vest,Brigandine
+2,8E,00,Light Armor 6,40,Headband,Pirate Hat,Jujitsu Gi,Viking Coat
+2,8F,00,Light Armor 7,50,Goggle Mask,Adamant Hat,Metal Jerkin,Adamant Vest
+2,90,00,Light Armor 8,60,Officer's Hat,Chakra Band,Barrel Coat,Power Vest
+2,91,00,Light Armor 9,70,Thief's Cap,Gigas Hat,Ninja Gear,Gigas Chestplate
+2,92,00,Light Armor 10,75,Chaperon,Minerva Bustier
+2,93,00,Light Armor 11,80,Crown of Laurels,Rubber Suit
+2,94,00,Light Armor 12,90,Renewing Morion,Mirage Vest
+2,95,00,Mystic Armor 1,10,Cotton Cap,Magick Curch,Cotton Shirt,Light Woven Shirt
+2,96,00,Mystic Armor 2,15,Pointy Hat,Topkapi Hat,Silken Shirt,Kilimweave Shirt
+2,97,00,Mystic Armor 3,20,Calot Hat,Wizard's Hat,Shepherd's Bolero,Wizard's Robes
+2,98,00,Mystic Armor 4,25,Lambent Hat,Feathered Cap,Chanter's Djellaba,Traveler's Vestment
+2,99,00,Mystic Armor 5,30,Mage's Hat,Lamia's Tiara,Mage's Habit,Enchanter's Habit
+2,9A,00,Mystic Armor 6,40,Sorcerer's Hat,Black Cowl,Sorcerer's Habit,Black Garb
+2,9B,00,Mystic Armor 7,50,Astrakhan Hat,Gaia Hat,Carmagnole,Maduin Gear
+2,9C,00,Mystic Armor 8,60,Hypnocrown,Gold Hairpin,Jade Gown,Gaia Gear
+2,9D,00,Mystic Armor 9,70,Celebrant's Miter,Cleric's Robes
+2,9E,00,Mystic Armor 10,75,Black Mask,Black Robes
+2,9F,00,Mystic Armor 11,80,White Mask,White Robes
+2,A0,00,Mystic Armor 12,90,Golden Skullcap,Glimmering Robes
+6,A1,00,Accessories 1,5,Orrachea Armlet
+6,A2,00,Accessories 2,20,Bangle,Firefly
+6,A3,00,Accessories 3,25,Diamond Armlet,Argyle Armlet
+6,A4,00,Accessories 4,35,Battle Harness,Steel Gorget
+6,A5,00,Accessories 5,35,Tourmaline Ring,Embroidered Tippet
+6,A6,00,Accessories 6,35,Golden Amulet,Leather Gorget
+6,A7,00,Accessories 7,40,Rose Corsage,Turtleshell Choker
+6,A8,00,Accessories 8,45,Thief's Cuffs,Gauntlets
+6,A9,00,Accessories 9,30,Amber Armlet,Black Belt
+6,AA,00,Accessories 10,40,Jade Collar,Nishijin Belt
+6,AB,00,Accessories 11,45,Pheasant Netsuke,Blazer Gloves
+6,AC,00,Accessories 12,60,Gillie Boots,Steel Poleyns
+6,AD,00,Accessories 13,60,Berserker Bracers,Magick Gloves
+6,AE,00,Accessories 14,70,Sage's Ring,Agate Ring
+6,AF,00,Accessories 15,70,Ruby Ring,Bowline Sash
+6,B0,00,Accessories 16,70,Cameo Belt,Cat-ear Hood
+6,B1,00,Accessories 17,80,Bubble Belt,Fuzzy Miter
+6,B2,00,Accessories 18,80,Sash,Power Armlet
+6,B3,00,Accessories 19,100,Indigo Pendant,Winged Boots
+6,B4,00,Accessories 20,115,Opal Ring,Hermes Sandals
+6,B5,00,Ribbon,215
+4,B6,00,White Magick 1,15,Cure,Blindna 
+4,B7,00,White Magick 2,20,Vox,Poisona
+4,B8,00,White Magick 3,25,Protect,Shell 
+4,B9,00,White Magick 4,30,Cura,Raise 
+4,BA,00,White Magick 5,40,Dispel,Stona
+4,BB,00,White Magick 6,50,Curaga,Regen
+4,BC,00,White Magick 7,60,Cleanse,Esuna
+4,BD,00,White Magick 8,70,Confuse,Faith
+4,BE,00,Black Magick 1,15,Fire,Thunder
+4,BF,00,Black Magick 2,20,Blizzard,Blind
+4,C0,00,Black Magick 3,25,Aqua,Silence
+4,C1,00,Black Magick 4,30,Aero,Sleep
+4,C2,00,Black Magick 5,40,Fira,Poison
+4,C3,00,Black Magick 6,50,Thundara,Blizzara
+4,C4,00,Black Magick 7,60,Bio,Blindga
+4,C5,00,Black Magick 8,70,Aeroga,Silencega
+4,C6,00,Time Magick 1,20,Slow,Immobilize
+4,C7,00,Time Magick 2,30,Reflect,Disable
+4,C8,00,Time Magick 3,40,Vanish,Balance
+4,C9,00,Time Magick 4,50,Gravity,Haste
+4,CA,00,Time Magick 5,60,Stop,Bleed
+4,CB,00,Time Magick 6,70,Break,Countdown
+4,CC,00,Time Magick 7,80,Float,Berserk
+4,CD,00,Green Magick 1,40,Decoy,Oil
+4,CE,00,Green Magick 2,50,Drain,Reverse
+4,CF,00,Green Magick 3,90,Bubble,Syphon
+4,D0,00,White Magick 10,90,Dispelga,Arise
+4,D1,00,White Magick 11,100,Holy,Esunaga
+4,D2,00,White Magick 12,110,Protectga,Shellga
+4,D3,00,White Magick 13,155,Renew
+4,D4,00,Arcane Magick 1,40,Dark,Darkra
+4,D5,00,Arcane Magick 2,50,Death,Darkga
+4,D6,00,Arcane Magick 3,110,Ardor
+4,D7,00,Black Magick 11,100,Toxify,Shock
+4,D8,00,Black Magick 12,120,Scourge,Flare
+4,D9,00,Black Magick 13,165,Scathe
+4,DA,00,Time Magick 9,100,Reflectga,Slowga
+5,DB,00,Warmage,30,Gain MP after dealing magick damage.
+5,DC,00,Martyr,30,Gain MP after taking damage.
+5,DD,00,Inquisitor,30,Gain MP after dealing damage.
+5,DE,00,Headsman,30,Gain MP after defeating a foe.
+5,DF,00,Adrenaline,65,Increases strength when HP Critical.
+5,E0,00,Spellbreaker,65,Increases magick power when HP Critical.
+5,E1,00,Focus,70,Increases strength when HP is full.
+5,E2,00,Serenity,70,Increases magick when HP is full.
+5,E3,00,Last Stand,70,Increases defense when HP Critical.
+5,E4,00,Spellbound,30,Increases duration of status effects.
+5,E5,00,Brawler,90,Increases attack power when fighting empty-handed.
+5,E6,00,Shield Block,25,Increases chance to block with a shield. 
+5,E7,00,Shield Block,45,Increases chance to block with a shield. 
+5,E8,00,Shield Block,75,Increases chance to block with a shield. 
+5,E9,00,Channelling,30,Reduces magick MP cost by 10%. 
+5,EA,00,Channelling,50,Reduces magick MP cost by 10%. 
+5,EB,00,Channelling,80,Reduces magick MP cost by 10%. 
+5,EC,00,Swiftness,30,Reduces action time by 10%.
+5,ED,00,Swiftness,50,Reduces action time by 10%.
+5,EE,00,Swiftness,80,Reduces action time by 10%.
+5,EF,00,Remedy Lore 1,20,Remedies remove Sleep, Sap, Immobilize, and Disable.
+5,F0,00,Remedy Lore 2,30,Remedies remove Petrify, Confuse, and Oil.
+5,F1,00,Remedy Lore 3,70,Remedies remove Stop, Doom, and Disease. 
+5,F2,00,Potion Lore 1,20,Potions restore more HP.
+5,F3,00,Potion Lore 2,35,Potions restore more HP.
+5,F4,00,Potion Lore 3,70,Potions restore more HP.
+5,F5,00,Ether Lore 1,20,Ethers restore more MP.
+5,F6,00,Ether Lore 2,35,Ethers restore more MP.
+5,F7,00,Ether Lore 3,70,Ethers restore more MP.
+5,F8,00,Phoenix Lore,30,Phoenix Down restores more HP.
+5,F9,00,Phoenix Lore,50,Phoenix Down restores more HP.
+5,FA,00,Phoenix Lore,90,Phoenix Down restores more HP.
+5,FB,00,Battle Lore-A,30,Increases physical attack damage.
+5,FC,00,Battle Lore-B,30,Increases physical attack damage.
+5,FD,00,Battle Lore-C,30,Increases physical attack damage.
+5,FE,00,Battle Lore-D,30,Increases physical attack damage.
+5,FF,00,Battle Lore-E,30,Increases physical attack damage.
+5,00,01,Magick Lore-A,30,Increases magick potency.
+5,01,01,Magick Lore-B,30,Increases magick potency.
+5,02,01,Magick Lore-C,30,Increases magick potency.
+5,03,01,Magick Lore-D,30,Increases magick potency.
+5,04,01,Magick Lore-E,50,Increases magick potency.
+5,05,01,+30 HP-A,20
+5,06,01,+70 HP-B,30
+5,07,01,+110 HP-C,40
+5,08,01,+150 HP-D,50
+5,09,01,+190 HP-E,60
+8,0A,01,Gambit Slot-A,15
+8,0B,01,Gambit Slot-B,20
+8,0C,01,Gambit Slot-C,25
+8,0D,01,Gambit Slot-D,30
+8,0E,01,Gambit Slot-E,35
+8,0F,01,Gambit Slot-F,40
+8,10,01,Gambit Slot-G,45
+8,11,01,Gambit Slot-H,50
+8,12,01,Gambit Slot-I,70
+8,13,01,Gambit Slot-J,100
+7,14,01,Steal,20,14
+7,15,01,Libra,25,19
+7,16,01,First Aid,20,14
+7,17,01,Poach,30
+7,18,01,Charge,30
+7,19,01,Horology,50
+7,1A,01,Souleater,35
+7,1B,01,Traveler,50
+7,1C,01,Numerology,40
+7,1D,01,Shear,50
+7,1E,01,Achilles,40
+7,1F,01,Gil Toss,30
+7,20,01,Charm,30
+7,21,01,Sight Unseeing,40
+7,22,01,Infuse,30
+7,23,01,Addle,50
+7,24,01,Bonecrusher,30
+7,25,01,Shades of Black,70
+7,26,01,Stamp,40
+7,27,01,Expose,50
+7,28,01,Revive,40
+7,29,01,1000 Needles,35
+7,2A,01,Wither,50
+7,2B,01,Telekenesis,80
+5,2C,01,+230 HP-F,70
+5,2D,01,+270 HP-G,80
+5,2E,01,+310 HP-H,90
+5,2F,01,+350 HP-I,100
+5,30,01,+390 HP-J,115
+5,31,01,+435 HP-K,130
+5,32,01,+500 HP-L,220
+5,33,01,Battle Lore-F,50,Increases physical attack damage.
+5,34,01,Battle Lore-G,50,Increases physical attack damage.
+5,35,01,Battle Lore-H,50,Increases physical attack damage.
+5,36,01,Battle Lore-I,70,Increases physical attack damage.
+5,37,01,Battle Lore-J,70,Increases physical attack damage.
+5,38,01,Battle Lore-K,70,Increases physical attack damage.
+5,39,01,Battle Lore-L,70,Increases physical attack damage.
+5,3A,01,Battle Lore-M,100,Increases physical attack damage.
+5,3B,01,Battle Lore-N,100,Increases physical attack damage.
+5,3C,01,Battle Lore-O,100,Increases physical attack damage.
+5,3D,01,Battle Lore-P,100,Increases physical attack damage.
+5,3E,01,Magick Lore-F,50,Increases magick potency.
+5,3F,01,Magick Lore-G,50,Increases magick potency.
+5,40,01,Magick Lore-H,50,Increases magick potency.
+5,41,01,Magick Lore-I,70,Increases magick potency.
+5,42,01,Magick Lore-J,70,Increases magick potency.
+5,43,01,Magick Lore-K,70,Increases magick potency.
+5,44,01,Magick Lore-L,70,Increases magick potency.
+5,45,01,Magick Lore-M,100,Increases magick potency.
+5,46,01,Magick Lore-N,100,Increases magick potency.
+5,47,01,Magick Lore-O,100,Increases magick potency.
+5,48,01,Magick Lore-P,100,Increases magick potency.
+3,49,01,Swords 8,80,Deathbringer,Stoneblade
+3,4A,01,Swords 9,90,Durandal,Simha
+3,4B,01,Karkata,80
+3,4C,01,Greatswords 4,100,Ragnarok
+3,4D,01,Excalipur,150
+3,4E,01,Katana 5,100,Muramasa
+3,4F,01,Kumbha,200
+0,50,01,Ninja Swords 3,120,Koga Blade
+3,51,01,Vrsabha,100
+0,52,01,Poles 6,60,Sweep,Eight-fluted Pole
+0,53,01,Kanya,180
+3,54,01,Bows 7,90,Perseus Bow,Artemis Bow
+3,55,01,Dhanusha,200
+1,56,01,Mithuna,190
+3,57,01,Vrscika,175
+0,58,01,Daggers 6,80,Zwill Crossblade
+1,59,01,Staves 5,65,Judicer's Staff,Cloud Staff
+1,5A,01,Measures 4,100,Euclid's Sextant
+0,5B,01,Makara,105
+2,5C,01,Shields 7,65,Venetian Shield
+2,5D,01,Heavy Armor 11,90,Magepower Shishak,Maximillian
+2,5E,01,Heavy Armor 12,110,Grand Helm,Grand Armor
+2,5F,01,Light Armor 13,110,Dueling Mask,Brave Suit
+2,60,01,Mystic Armor 13,110,Circlet,Lordly Robes
+6,61,01,Accessories 21,130,Quasimodo Boots,Nihopalaoa
+6,62,01,Accessories 22,160,Germinas Boots,Ring of Renewal
+4,63,01,White Magick 9,80,Bravery,Curaja
+4,64,01,Black Magick 9,90,Firaga,Thundaga
+4,65,01,Time Magick 8,90,Vanishga,Balance
+4,66,01,Black Magick 10,90,Blizzaga,Sleepga
+4,67,01,Time Magick 10,125,Graviga,Hastega
+A,68,01,Second Board,30
