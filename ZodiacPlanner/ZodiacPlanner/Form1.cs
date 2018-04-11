@@ -98,15 +98,9 @@ namespace ZodiacPlanner
             if (listViewSelected != null)
             {
                 if ((listViewSelected.Tag as Licence).inserted)
-                {
                     listViewSelected.BackColor = Color.Gold;
-                    insertButton.Enabled = false;
-                }
                 else
-                {
                     listViewSelected.BackColor = Color.Transparent;
-                    insertButton.Enabled = true;
-                }
             }
 
             if (licenceList.SelectedItems.Count == 1) {
@@ -117,6 +111,11 @@ namespace ZodiacPlanner
                 listLicence3.Text = l.contents.Length > 2 ? l.contents[2] : "";
                 listLicence4.Text = l.contents.Length > 3 ? l.contents[3] : "";
                 listViewSelected.BackColor = Color.LightBlue;
+
+                if (l.inserted)
+                    insertButton.Enabled = false;
+                else
+                    insertButton.Enabled = true;
             }
         }
 
