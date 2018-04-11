@@ -28,7 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.outputLogCheck = new System.Windows.Forms.CheckBox();
+            this.colorSettings = new System.Windows.Forms.Button();
+            this.toggleColor = new System.Windows.Forms.Button();
+            this.quitBtn = new System.Windows.Forms.PictureBox();
+            this.aboutBtn = new System.Windows.Forms.PictureBox();
+            this.saveBtn = new System.Windows.Forms.PictureBox();
+            this.loadBtn = new System.Windows.Forms.PictureBox();
+            this.newButton = new System.Windows.Forms.PictureBox();
+            this.rightClick = new System.Windows.Forms.CheckBox();
+            this.doubleClick = new System.Windows.Forms.CheckBox();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.boardPanel = new System.Windows.Forms.TableLayoutPanel();
             this.button26 = new System.Windows.Forms.Button();
@@ -80,30 +91,38 @@
             this.button47 = new System.Windows.Forms.Button();
             this.button48 = new System.Windows.Forms.Button();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
-            this.selectedCellText = new System.Windows.Forms.TextBox();
-            this.selectedContent1 = new System.Windows.Forms.TextBox();
-            this.selectedContent2 = new System.Windows.Forms.TextBox();
-            this.selectedContent3 = new System.Windows.Forms.TextBox();
-            this.selectedContent4 = new System.Windows.Forms.TextBox();
-            this.selectedLPCost = new System.Windows.Forms.TextBox();
             this.clearButton = new System.Windows.Forms.Button();
-            this.searchBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.licenceList = new System.Windows.Forms.ListView();
-            this.codeHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.licenceHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lpHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.selectedLPCost = new System.Windows.Forms.TextBox();
+            this.selectedContent4 = new System.Windows.Forms.TextBox();
+            this.selectedContent3 = new System.Windows.Forms.TextBox();
+            this.selectedContent2 = new System.Windows.Forms.TextBox();
+            this.selectedContent1 = new System.Windows.Forms.TextBox();
+            this.selectedCellText = new System.Windows.Forms.TextBox();
+            this.logLabel = new System.Windows.Forms.Label();
+            this.showLogBtn = new System.Windows.Forms.Button();
+            this.insertButton = new System.Windows.Forms.Button();
             this.listLicence4 = new System.Windows.Forms.TextBox();
             this.listLicence3 = new System.Windows.Forms.TextBox();
             this.listLicence2 = new System.Windows.Forms.TextBox();
             this.listLicence1 = new System.Windows.Forms.TextBox();
-            this.insertButton = new System.Windows.Forms.Button();
-            this.doubleClick = new System.Windows.Forms.CheckBox();
-            this.rightClick = new System.Windows.Forms.CheckBox();
+            this.licenceList = new System.Windows.Forms.ListView();
+            this.codeHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.licenceHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lpHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.typeHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label1 = new System.Windows.Forms.Label();
+            this.searchBox = new System.Windows.Forms.TextBox();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.quitBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aboutBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saveBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loadBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
@@ -124,15 +143,133 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.AutoScroll = true;
+            this.splitContainer1.Panel1.Controls.Add(this.outputLogCheck);
+            this.splitContainer1.Panel1.Controls.Add(this.colorSettings);
+            this.splitContainer1.Panel1.Controls.Add(this.toggleColor);
+            this.splitContainer1.Panel1.Controls.Add(this.quitBtn);
+            this.splitContainer1.Panel1.Controls.Add(this.aboutBtn);
+            this.splitContainer1.Panel1.Controls.Add(this.saveBtn);
+            this.splitContainer1.Panel1.Controls.Add(this.loadBtn);
+            this.splitContainer1.Panel1.Controls.Add(this.newButton);
             this.splitContainer1.Panel1.Controls.Add(this.rightClick);
             this.splitContainer1.Panel1.Controls.Add(this.doubleClick);
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.AutoScroll = true;
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
             this.splitContainer1.Size = new System.Drawing.Size(1264, 861);
-            this.splitContainer1.SplitterDistance = 70;
+            this.splitContainer1.SplitterDistance = 53;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // outputLogCheck
+            // 
+            this.outputLogCheck.AutoSize = true;
+            this.outputLogCheck.Location = new System.Drawing.Point(792, 12);
+            this.outputLogCheck.Name = "outputLogCheck";
+            this.outputLogCheck.Size = new System.Drawing.Size(103, 17);
+            this.outputLogCheck.TabIndex = 9;
+            this.outputLogCheck.Text = "Output log to file";
+            this.outputLogCheck.UseVisualStyleBackColor = true;
+            this.outputLogCheck.CheckedChanged += new System.EventHandler(this.outputLogCheck_CheckedChanged);
+            // 
+            // colorSettings
+            // 
+            this.colorSettings.Location = new System.Drawing.Point(1146, 8);
+            this.colorSettings.Name = "colorSettings";
+            this.colorSettings.Size = new System.Drawing.Size(106, 23);
+            this.colorSettings.TabIndex = 8;
+            this.colorSettings.Text = "Color Settings";
+            this.colorSettings.UseVisualStyleBackColor = true;
+            this.colorSettings.Click += new System.EventHandler(this.colorSettings_Click);
+            // 
+            // toggleColor
+            // 
+            this.toggleColor.Location = new System.Drawing.Point(1037, 8);
+            this.toggleColor.Name = "toggleColor";
+            this.toggleColor.Size = new System.Drawing.Size(106, 23);
+            this.toggleColor.TabIndex = 7;
+            this.toggleColor.Text = "Toggle Dark Mode";
+            this.toggleColor.UseVisualStyleBackColor = true;
+            this.toggleColor.Click += new System.EventHandler(this.toggleColor_Click);
+            // 
+            // quitBtn
+            // 
+            this.quitBtn.Image = global::ZodiacPlanner.Properties.Resources.quit;
+            this.quitBtn.Location = new System.Drawing.Point(224, 3);
+            this.quitBtn.Name = "quitBtn";
+            this.quitBtn.Size = new System.Drawing.Size(47, 47);
+            this.quitBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.quitBtn.TabIndex = 6;
+            this.quitBtn.TabStop = false;
+            this.quitBtn.Click += new System.EventHandler(this.quitBtn_Click);
+            // 
+            // aboutBtn
+            // 
+            this.aboutBtn.Image = global::ZodiacPlanner.Properties.Resources.about;
+            this.aboutBtn.Location = new System.Drawing.Point(171, 3);
+            this.aboutBtn.Name = "aboutBtn";
+            this.aboutBtn.Size = new System.Drawing.Size(47, 47);
+            this.aboutBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.aboutBtn.TabIndex = 5;
+            this.aboutBtn.TabStop = false;
+            this.aboutBtn.Click += new System.EventHandler(this.aboutBtn_Click);
+            // 
+            // saveBtn
+            // 
+            this.saveBtn.Image = global::ZodiacPlanner.Properties.Resources.save;
+            this.saveBtn.Location = new System.Drawing.Point(118, 3);
+            this.saveBtn.Name = "saveBtn";
+            this.saveBtn.Size = new System.Drawing.Size(47, 47);
+            this.saveBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.saveBtn.TabIndex = 4;
+            this.saveBtn.TabStop = false;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
+            // 
+            // loadBtn
+            // 
+            this.loadBtn.Image = global::ZodiacPlanner.Properties.Resources.load;
+            this.loadBtn.Location = new System.Drawing.Point(65, 3);
+            this.loadBtn.Name = "loadBtn";
+            this.loadBtn.Size = new System.Drawing.Size(47, 47);
+            this.loadBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.loadBtn.TabIndex = 3;
+            this.loadBtn.TabStop = false;
+            this.loadBtn.Click += new System.EventHandler(this.loadBtn_Click);
+            // 
+            // newButton
+            // 
+            this.newButton.Image = global::ZodiacPlanner.Properties.Resources._new;
+            this.newButton.Location = new System.Drawing.Point(12, 3);
+            this.newButton.Name = "newButton";
+            this.newButton.Size = new System.Drawing.Size(47, 47);
+            this.newButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.newButton.TabIndex = 2;
+            this.newButton.TabStop = false;
+            this.newButton.Click += new System.EventHandler(this.newButton_Click);
+            // 
+            // rightClick
+            // 
+            this.rightClick.AutoSize = true;
+            this.rightClick.Location = new System.Drawing.Point(906, 35);
+            this.rightClick.Name = "rightClick";
+            this.rightClick.Size = new System.Drawing.Size(126, 17);
+            this.rightClick.TabIndex = 1;
+            this.rightClick.Text = "Right click to remove";
+            this.rightClick.UseVisualStyleBackColor = true;
+            this.rightClick.CheckedChanged += new System.EventHandler(this.rightClick_CheckedChanged);
+            // 
+            // doubleClick
+            // 
+            this.doubleClick.AutoSize = true;
+            this.doubleClick.Location = new System.Drawing.Point(906, 12);
+            this.doubleClick.Name = "doubleClick";
+            this.doubleClick.Size = new System.Drawing.Size(125, 17);
+            this.doubleClick.TabIndex = 0;
+            this.doubleClick.Text = "Double click to insert";
+            this.doubleClick.UseVisualStyleBackColor = true;
+            this.doubleClick.CheckedChanged += new System.EventHandler(this.doubleClick_CheckedChanged);
             // 
             // splitContainer2
             // 
@@ -148,12 +285,14 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.splitContainer3);
-            this.splitContainer2.Size = new System.Drawing.Size(1264, 787);
+            this.splitContainer2.Size = new System.Drawing.Size(1264, 804);
             this.splitContainer2.SplitterDistance = 895;
             this.splitContainer2.TabIndex = 0;
             // 
             // boardPanel
             // 
+            this.boardPanel.BackgroundImage = global::ZodiacPlanner.Properties.Resources.bg;
+            this.boardPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.boardPanel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.boardPanel.ColumnCount = 25;
             this.boardPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.4961F));
@@ -260,8 +399,8 @@
             this.boardPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
             this.boardPanel.Size = new System.Drawing.Size(883, 784);
             this.boardPanel.TabIndex = 0;
-            this.boardPanel.Click += new System.EventHandler(this.boardPanel_Click);
             this.boardPanel.DoubleClick += new System.EventHandler(this.boardPanel_DoubleClick);
+            this.boardPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.boardPanel_MouseClick);
             // 
             // button26
             // 
@@ -1051,6 +1190,8 @@
             // 
             // splitContainer3.Panel2
             // 
+            this.splitContainer3.Panel2.Controls.Add(this.logLabel);
+            this.splitContainer3.Panel2.Controls.Add(this.showLogBtn);
             this.splitContainer3.Panel2.Controls.Add(this.insertButton);
             this.splitContainer3.Panel2.Controls.Add(this.listLicence4);
             this.splitContainer3.Panel2.Controls.Add(this.listLicence3);
@@ -1059,64 +1200,9 @@
             this.splitContainer3.Panel2.Controls.Add(this.licenceList);
             this.splitContainer3.Panel2.Controls.Add(this.label1);
             this.splitContainer3.Panel2.Controls.Add(this.searchBox);
-            this.splitContainer3.Size = new System.Drawing.Size(365, 787);
-            this.splitContainer3.SplitterDistance = 216;
+            this.splitContainer3.Size = new System.Drawing.Size(365, 804);
+            this.splitContainer3.SplitterDistance = 220;
             this.splitContainer3.TabIndex = 0;
-            // 
-            // selectedCellText
-            // 
-            this.selectedCellText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectedCellText.Location = new System.Drawing.Point(4, 4);
-            this.selectedCellText.Name = "selectedCellText";
-            this.selectedCellText.ReadOnly = true;
-            this.selectedCellText.Size = new System.Drawing.Size(358, 29);
-            this.selectedCellText.TabIndex = 0;
-            this.selectedCellText.Text = "[A1]";
-            // 
-            // selectedContent1
-            // 
-            this.selectedContent1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectedContent1.Location = new System.Drawing.Point(4, 39);
-            this.selectedContent1.Name = "selectedContent1";
-            this.selectedContent1.ReadOnly = true;
-            this.selectedContent1.Size = new System.Drawing.Size(358, 29);
-            this.selectedContent1.TabIndex = 1;
-            // 
-            // selectedContent2
-            // 
-            this.selectedContent2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectedContent2.Location = new System.Drawing.Point(3, 74);
-            this.selectedContent2.Name = "selectedContent2";
-            this.selectedContent2.ReadOnly = true;
-            this.selectedContent2.Size = new System.Drawing.Size(358, 29);
-            this.selectedContent2.TabIndex = 2;
-            // 
-            // selectedContent3
-            // 
-            this.selectedContent3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectedContent3.Location = new System.Drawing.Point(3, 109);
-            this.selectedContent3.Name = "selectedContent3";
-            this.selectedContent3.ReadOnly = true;
-            this.selectedContent3.Size = new System.Drawing.Size(358, 29);
-            this.selectedContent3.TabIndex = 3;
-            // 
-            // selectedContent4
-            // 
-            this.selectedContent4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectedContent4.Location = new System.Drawing.Point(3, 144);
-            this.selectedContent4.Name = "selectedContent4";
-            this.selectedContent4.ReadOnly = true;
-            this.selectedContent4.Size = new System.Drawing.Size(358, 29);
-            this.selectedContent4.TabIndex = 4;
-            // 
-            // selectedLPCost
-            // 
-            this.selectedLPCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectedLPCost.Location = new System.Drawing.Point(3, 179);
-            this.selectedLPCost.Name = "selectedLPCost";
-            this.selectedLPCost.ReadOnly = true;
-            this.selectedLPCost.Size = new System.Drawing.Size(184, 29);
-            this.selectedLPCost.TabIndex = 5;
             // 
             // clearButton
             // 
@@ -1128,38 +1214,143 @@
             this.clearButton.UseVisualStyleBackColor = true;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
-            // searchBox
+            // selectedLPCost
             // 
-            this.searchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchBox.Location = new System.Drawing.Point(4, 29);
-            this.searchBox.Name = "searchBox";
-            this.searchBox.Size = new System.Drawing.Size(358, 29);
-            this.searchBox.TabIndex = 7;
-            this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
+            this.selectedLPCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectedLPCost.Location = new System.Drawing.Point(3, 179);
+            this.selectedLPCost.Name = "selectedLPCost";
+            this.selectedLPCost.ReadOnly = true;
+            this.selectedLPCost.Size = new System.Drawing.Size(184, 29);
+            this.selectedLPCost.TabIndex = 5;
             // 
-            // label1
+            // selectedContent4
             // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(4, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(357, 2);
-            this.label1.TabIndex = 8;
+            this.selectedContent4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectedContent4.Location = new System.Drawing.Point(3, 144);
+            this.selectedContent4.Name = "selectedContent4";
+            this.selectedContent4.ReadOnly = true;
+            this.selectedContent4.Size = new System.Drawing.Size(358, 29);
+            this.selectedContent4.TabIndex = 4;
+            // 
+            // selectedContent3
+            // 
+            this.selectedContent3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectedContent3.Location = new System.Drawing.Point(3, 109);
+            this.selectedContent3.Name = "selectedContent3";
+            this.selectedContent3.ReadOnly = true;
+            this.selectedContent3.Size = new System.Drawing.Size(358, 29);
+            this.selectedContent3.TabIndex = 3;
+            // 
+            // selectedContent2
+            // 
+            this.selectedContent2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectedContent2.Location = new System.Drawing.Point(3, 74);
+            this.selectedContent2.Name = "selectedContent2";
+            this.selectedContent2.ReadOnly = true;
+            this.selectedContent2.Size = new System.Drawing.Size(358, 29);
+            this.selectedContent2.TabIndex = 2;
+            // 
+            // selectedContent1
+            // 
+            this.selectedContent1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectedContent1.Location = new System.Drawing.Point(4, 39);
+            this.selectedContent1.Name = "selectedContent1";
+            this.selectedContent1.ReadOnly = true;
+            this.selectedContent1.Size = new System.Drawing.Size(358, 29);
+            this.selectedContent1.TabIndex = 1;
+            // 
+            // selectedCellText
+            // 
+            this.selectedCellText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectedCellText.Location = new System.Drawing.Point(4, 4);
+            this.selectedCellText.Name = "selectedCellText";
+            this.selectedCellText.ReadOnly = true;
+            this.selectedCellText.Size = new System.Drawing.Size(358, 29);
+            this.selectedCellText.TabIndex = 0;
+            this.selectedCellText.Text = "[A1]";
+            // 
+            // logLabel
+            // 
+            this.logLabel.AutoSize = true;
+            this.logLabel.Location = new System.Drawing.Point(4, 555);
+            this.logLabel.Name = "logLabel";
+            this.logLabel.Size = new System.Drawing.Size(16, 13);
+            this.logLabel.TabIndex = 16;
+            this.logLabel.Text = "...";
+            // 
+            // showLogBtn
+            // 
+            this.showLogBtn.Location = new System.Drawing.Point(286, 548);
+            this.showLogBtn.Name = "showLogBtn";
+            this.showLogBtn.Size = new System.Drawing.Size(75, 26);
+            this.showLogBtn.TabIndex = 15;
+            this.showLogBtn.Text = "Show Log";
+            this.showLogBtn.UseVisualStyleBackColor = true;
+            this.showLogBtn.Click += new System.EventHandler(this.showLogBtn_Click);
+            // 
+            // insertButton
+            // 
+            this.insertButton.Location = new System.Drawing.Point(5, 513);
+            this.insertButton.Name = "insertButton";
+            this.insertButton.Size = new System.Drawing.Size(357, 29);
+            this.insertButton.TabIndex = 14;
+            this.insertButton.Text = "Insert";
+            this.insertButton.UseVisualStyleBackColor = true;
+            this.insertButton.Click += new System.EventHandler(this.insertButton_Click);
+            // 
+            // listLicence4
+            // 
+            this.listLicence4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listLicence4.Location = new System.Drawing.Point(6, 479);
+            this.listLicence4.Name = "listLicence4";
+            this.listLicence4.ReadOnly = true;
+            this.listLicence4.Size = new System.Drawing.Size(358, 29);
+            this.listLicence4.TabIndex = 13;
+            // 
+            // listLicence3
+            // 
+            this.listLicence3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listLicence3.Location = new System.Drawing.Point(6, 444);
+            this.listLicence3.Name = "listLicence3";
+            this.listLicence3.ReadOnly = true;
+            this.listLicence3.Size = new System.Drawing.Size(358, 29);
+            this.listLicence3.TabIndex = 12;
+            // 
+            // listLicence2
+            // 
+            this.listLicence2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listLicence2.Location = new System.Drawing.Point(6, 409);
+            this.listLicence2.Name = "listLicence2";
+            this.listLicence2.ReadOnly = true;
+            this.listLicence2.Size = new System.Drawing.Size(358, 29);
+            this.listLicence2.TabIndex = 11;
+            // 
+            // listLicence1
+            // 
+            this.listLicence1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listLicence1.Location = new System.Drawing.Point(7, 374);
+            this.listLicence1.Name = "listLicence1";
+            this.listLicence1.ReadOnly = true;
+            this.listLicence1.Size = new System.Drawing.Size(358, 29);
+            this.listLicence1.TabIndex = 10;
             // 
             // licenceList
             // 
             this.licenceList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.codeHeader,
             this.licenceHeader,
-            this.lpHeader});
+            this.lpHeader,
+            this.typeHeader});
             this.licenceList.FullRowSelect = true;
             this.licenceList.GridLines = true;
-            this.licenceList.Location = new System.Drawing.Point(4, 65);
+            this.licenceList.Location = new System.Drawing.Point(4, 51);
             this.licenceList.MultiSelect = false;
             this.licenceList.Name = "licenceList";
             this.licenceList.Size = new System.Drawing.Size(357, 317);
             this.licenceList.TabIndex = 9;
             this.licenceList.UseCompatibleStateImageBehavior = false;
             this.licenceList.View = System.Windows.Forms.View.Details;
+            this.licenceList.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.licenceList_ColumnClick);
             this.licenceList.SelectedIndexChanged += new System.EventHandler(this.licenceList_SelectedIndexChanged);
             // 
             // codeHeader
@@ -1169,77 +1360,45 @@
             // licenceHeader
             // 
             this.licenceHeader.Text = "Licence";
-            this.licenceHeader.Width = 232;
+            this.licenceHeader.Width = 155;
             // 
             // lpHeader
             // 
             this.lpHeader.Text = "LP";
             // 
-            // listLicence4
+            // typeHeader
             // 
-            this.listLicence4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listLicence4.Location = new System.Drawing.Point(6, 493);
-            this.listLicence4.Name = "listLicence4";
-            this.listLicence4.ReadOnly = true;
-            this.listLicence4.Size = new System.Drawing.Size(358, 29);
-            this.listLicence4.TabIndex = 13;
+            this.typeHeader.Text = "Type";
+            this.typeHeader.Width = 76;
             // 
-            // listLicence3
+            // label1
             // 
-            this.listLicence3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listLicence3.Location = new System.Drawing.Point(6, 458);
-            this.listLicence3.Name = "listLicence3";
-            this.listLicence3.ReadOnly = true;
-            this.listLicence3.Size = new System.Drawing.Size(358, 29);
-            this.listLicence3.TabIndex = 12;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Location = new System.Drawing.Point(4, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(357, 2);
+            this.label1.TabIndex = 8;
             // 
-            // listLicence2
+            // searchBox
             // 
-            this.listLicence2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listLicence2.Location = new System.Drawing.Point(6, 423);
-            this.listLicence2.Name = "listLicence2";
-            this.listLicence2.ReadOnly = true;
-            this.listLicence2.Size = new System.Drawing.Size(358, 29);
-            this.listLicence2.TabIndex = 11;
+            this.searchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchBox.Location = new System.Drawing.Point(4, 15);
+            this.searchBox.Name = "searchBox";
+            this.searchBox.Size = new System.Drawing.Size(358, 29);
+            this.searchBox.TabIndex = 7;
+            this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
             // 
-            // listLicence1
+            // saveFileDialog1
             // 
-            this.listLicence1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listLicence1.Location = new System.Drawing.Point(7, 388);
-            this.listLicence1.Name = "listLicence1";
-            this.listLicence1.ReadOnly = true;
-            this.listLicence1.Size = new System.Drawing.Size(358, 29);
-            this.listLicence1.TabIndex = 10;
+            this.saveFileDialog1.DefaultExt = "bin";
+            this.saveFileDialog1.Filter = "Binary Files | *.bin";
+            this.saveFileDialog1.Title = "Save Board";
             // 
-            // insertButton
+            // openFileDialog1
             // 
-            this.insertButton.Location = new System.Drawing.Point(5, 527);
-            this.insertButton.Name = "insertButton";
-            this.insertButton.Size = new System.Drawing.Size(357, 29);
-            this.insertButton.TabIndex = 14;
-            this.insertButton.Text = "Insert";
-            this.insertButton.UseVisualStyleBackColor = true;
-            this.insertButton.Click += new System.EventHandler(this.insertButton_Click);
-            // 
-            // doubleClick
-            // 
-            this.doubleClick.AutoSize = true;
-            this.doubleClick.Location = new System.Drawing.Point(906, 12);
-            this.doubleClick.Name = "doubleClick";
-            this.doubleClick.Size = new System.Drawing.Size(125, 17);
-            this.doubleClick.TabIndex = 0;
-            this.doubleClick.Text = "Double click to insert";
-            this.doubleClick.UseVisualStyleBackColor = true;
-            // 
-            // rightClick
-            // 
-            this.rightClick.AutoSize = true;
-            this.rightClick.Location = new System.Drawing.Point(906, 35);
-            this.rightClick.Name = "rightClick";
-            this.rightClick.Size = new System.Drawing.Size(126, 17);
-            this.rightClick.TabIndex = 1;
-            this.rightClick.Text = "Right click to remove";
-            this.rightClick.UseVisualStyleBackColor = true;
+            this.openFileDialog1.DefaultExt = "bin";
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "Binary | *.bin";
             // 
             // Form1
             // 
@@ -1247,13 +1406,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 861);
             this.Controls.Add(this.splitContainer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Zodiac Planner";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.quitBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aboutBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saveBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loadBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newButton)).EndInit();
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
@@ -1273,8 +1439,35 @@
 
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.SplitContainer splitContainer2;
+        private System.Windows.Forms.SplitContainer splitContainer3;
+        private System.Windows.Forms.Button clearButton;
+        private System.Windows.Forms.TextBox selectedLPCost;
+        private System.Windows.Forms.TextBox selectedContent4;
+        private System.Windows.Forms.TextBox selectedContent3;
+        private System.Windows.Forms.TextBox selectedContent2;
+        private System.Windows.Forms.TextBox selectedContent1;
+        private System.Windows.Forms.TextBox selectedCellText;
+        private System.Windows.Forms.Button insertButton;
+        private System.Windows.Forms.TextBox listLicence4;
+        private System.Windows.Forms.TextBox listLicence3;
+        private System.Windows.Forms.TextBox listLicence2;
+        private System.Windows.Forms.TextBox listLicence1;
+        private System.Windows.Forms.ListView licenceList;
+        private System.Windows.Forms.ColumnHeader codeHeader;
+        private System.Windows.Forms.ColumnHeader licenceHeader;
+        private System.Windows.Forms.ColumnHeader lpHeader;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox searchBox;
+        private System.Windows.Forms.CheckBox rightClick;
+        private System.Windows.Forms.CheckBox doubleClick;
+        private System.Windows.Forms.PictureBox newButton;
+        private System.Windows.Forms.PictureBox loadBtn;
+        private System.Windows.Forms.PictureBox saveBtn;
+        private System.Windows.Forms.PictureBox aboutBtn;
+        private System.Windows.Forms.PictureBox quitBtn;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.TableLayoutPanel boardPanel;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button24;
@@ -1299,6 +1492,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Button button28;
@@ -1322,27 +1516,12 @@
         private System.Windows.Forms.Button button46;
         private System.Windows.Forms.Button button47;
         private System.Windows.Forms.Button button48;
-        private System.Windows.Forms.SplitContainer splitContainer3;
-        private System.Windows.Forms.Button clearButton;
-        private System.Windows.Forms.TextBox selectedLPCost;
-        private System.Windows.Forms.TextBox selectedContent4;
-        private System.Windows.Forms.TextBox selectedContent3;
-        private System.Windows.Forms.TextBox selectedContent2;
-        private System.Windows.Forms.TextBox selectedContent1;
-        private System.Windows.Forms.TextBox selectedCellText;
-        private System.Windows.Forms.Button insertButton;
-        private System.Windows.Forms.TextBox listLicence4;
-        private System.Windows.Forms.TextBox listLicence3;
-        private System.Windows.Forms.TextBox listLicence2;
-        private System.Windows.Forms.TextBox listLicence1;
-        private System.Windows.Forms.ListView licenceList;
-        private System.Windows.Forms.ColumnHeader codeHeader;
-        private System.Windows.Forms.ColumnHeader licenceHeader;
-        private System.Windows.Forms.ColumnHeader lpHeader;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox searchBox;
-        private System.Windows.Forms.CheckBox rightClick;
-        private System.Windows.Forms.CheckBox doubleClick;
+        private System.Windows.Forms.Button toggleColor;
+        private System.Windows.Forms.ColumnHeader typeHeader;
+        private System.Windows.Forms.Button colorSettings;
+        private System.Windows.Forms.Label logLabel;
+        private System.Windows.Forms.Button showLogBtn;
+        private System.Windows.Forms.CheckBox outputLogCheck;
     }
 }
 

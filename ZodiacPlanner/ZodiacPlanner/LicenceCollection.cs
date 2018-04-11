@@ -46,5 +46,11 @@ namespace ZodiacPlanner
             return licences[pairs];
         }
 
+        public void Clear()
+        {
+            foreach (var l in licences)
+                l.Value.Clear();
+        }
+
     }
 }

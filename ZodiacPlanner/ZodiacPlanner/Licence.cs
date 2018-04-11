@@ -28,52 +28,11 @@ namespace ZodiacPlanner
             this.pair2 = pair2;
             this.name = name;
             this.contents = contents;
-            listViewItemContent = new string[] { pair1 + pair2, name, lpCost.ToString() };
+            this.lpCost = lpCost;
+            this.licenceType = licenceType;
+            listViewItemContent = new string[] { pair1 + pair2, name, lpCost.ToString(), ParseType(licenceType) };
             inserted = false;
-
-            switch(licenceType)
-            {
-                case 'A':
-                    color = Color.WhiteSmoke;
-                    break;
-                case 'B':
-                    color = Color.Gold;
-                    break;
-                case 'C':
-                    color = Color.LightGray;
-                    break;
-                case '0': //Handbombs/Guns
-                    color = Color.Violet;
-                    break;
-                case '1': //Staves/Maces/Measures
-                    color = Color.Blue;
-                    break;
-                case '2': //Shields
-                    color = Color.SandyBrown;
-                    break;
-                case '3': //Weapons
-                    color = Color.SteelBlue;
-                    break;
-                case '4': //Magicks
-                    color = Color.Purple;
-                    break;
-                case '5': //Augments
-                    color = Color.Pink;
-                    break;
-                case '6': //Accessories
-                    color = Color.Green;
-                    break;
-                case '7': //Technicks
-                    color = Color.MediumVioletRed;
-                    break;
-                case '8': //Gambit Slots
-                    color = Color.Yellow;
-                    break;
-                case '9': //Summons
-                    color = Color.OrangeRed;
-                    break;
-                default: throw new Exception($"Error in licenceinfo.txt, no such type as {licenceType}");
-            }
+            color = Program.colors.Get(licenceType);
         }
 
         public void Insert()
@@ -112,19 +71,35 @@ namespace ZodiacPlanner
             };
         }
 
-        public Button GetCell(Control parent)
+        public void ChangeCell(Button btn)
         {
-            var btn = new Button()
-            {
-                BackColor = color,
-                Dock = DockStyle.Fill,
-                FlatStyle = FlatStyle.Flat,
-                Margin = new Padding(0),
-                Parent = parent,
-                Tag = this
-            };
+            btn.BackColor = color;
+            btn.Tag = this;
+        }
 
-            return btn;
+        public void UpdateColor()
+        {
+            color = Program.colors.Get(licenceType);
+        }
+
+        static Dictionary<char, string> dict = new Dictionary<char, string>(33)
+        {
+            {'0', "Quickening"},    {'1', "Summon"},        {'2', "Essentials"},
+            {'3', "Swords"},        {'4', "Greatswords"},   {'5', "Katanas"},
+            {'6', "Ninja Swords"},  {'7', "Spears"},        {'8', "Poles"},
+            {'9', "Bows"},          {'A', "Crossbows"},     {'B', "Guns"},
+            {'C', "Axes & Hammers"},{'D', "Dagger"},        {'E', "Rods"},
+            {'F', "Staves"},        {'G', "Maces"},         {'H', "Measures"},
+            {'I', "Hand Bombs"},    {'J', "Shields"},       {'K', "Heavy Armor"},
+            {'L', "Light Armor"},   {'M', "Mystic Armor"},  {'N', "Accessories"},
+            {'O', "White Magicks"}, {'P', "Black Magicks"}, {'Q', "Time Magicks"},
+            {'R', "Green Magicks"}, {'S', "Arcane Magicks"},{'T', "Augments"},
+            {'U', "Gambit Slots"},  {'V', "Technicks"},     {'W', "Second Board"}
+        };
+
+        static string ParseType(char t)
+        {
+            return dict[t];
         }
 
     }
