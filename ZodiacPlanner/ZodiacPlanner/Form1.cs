@@ -25,7 +25,7 @@ namespace ZodiacPlanner
         public Form1()
         {
             InitializeComponent();
-            
+            DoubleBuffered = true;
             for (int y = 1; y < 25; y++)
                 for (int x = 1; x < 25; x++)
                 {
@@ -34,7 +34,8 @@ namespace ZodiacPlanner
                         Dock = DockStyle.Fill,
                         Margin = new Padding(0),
                         FlatStyle = FlatStyle.Flat,
-                        BackColor = Color.Transparent
+                        BackColor = Color.Transparent,
+                        Padding = new Padding(0)
                     };
                     btn.MouseClick += boardPanel_MouseClick;
                     btn.DoubleClick += boardPanel_DoubleClick;
@@ -238,7 +239,7 @@ namespace ZodiacPlanner
                     var btn = boardPanel.GetControlFromPosition(selectedPoint.Value.X, selectedPoint.Value.Y) as Button;
                     l.ChangeCell(btn);
                     selectedCell = btn;
-                    l.Insert();
+                    l.Insert($"[{(char)(selectedPoint.Value.X + 64)}{selectedPoint.Value.Y}]");
 
                     selectedCellText.Text += l.name;
                     selectedLPCost.Text = l.lpCost.ToString();
@@ -328,7 +329,7 @@ namespace ZodiacPlanner
                             if (!l.inserted)
                             {
                                 l.ChangeCell(btn);
-                                l.Insert();
+                                l.Insert($"[{(char)(x + 64)}{y}]");
                             }
                             else
                             {
@@ -403,7 +404,7 @@ namespace ZodiacPlanner
 
         private void aboutBtn_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("Zodiac Planner made by Vaan - Latest Version 2018/04/10\nOpen Steam Profile?","About", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+            if(MessageBox.Show("Zodiac Planner made by Vaan - Latest Version 2018/04/27\nOpen Steam Profile?","About", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
             {
                 System.Diagnostics.Process.Start("https://steamcommunity.com/id/Vaan");
             }

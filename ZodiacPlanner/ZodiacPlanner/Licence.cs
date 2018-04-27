@@ -30,19 +30,21 @@ namespace ZodiacPlanner
             this.contents = contents;
             this.lpCost = lpCost;
             this.licenceType = licenceType;
-            listViewItemContent = new string[] { pair1 + pair2, name, lpCost.ToString(), ParseType(licenceType) };
+            listViewItemContent = new string[] { pair1 + pair2, name, lpCost.ToString(), ParseType(licenceType), String.Empty };
             inserted = false;
             color = Program.colors.Get(licenceType);
         }
 
-        public void Insert()
+        public void Insert(string pos)
         {
             inserted = true;
+            listViewItemContent[4] = pos;
         }
 
         public void Clear()
         {
             inserted = false;
+            listViewItemContent[4] = String.Empty;
         }
 
         public bool Query(string query)

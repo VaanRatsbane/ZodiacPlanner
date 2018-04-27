@@ -114,6 +114,7 @@
             this.searchBox = new System.Windows.Forms.TextBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.insertedPos = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -1340,7 +1341,8 @@
             this.codeHeader,
             this.licenceHeader,
             this.lpHeader,
-            this.typeHeader});
+            this.typeHeader,
+            this.insertedPos});
             this.licenceList.FullRowSelect = true;
             this.licenceList.GridLines = true;
             this.licenceList.Location = new System.Drawing.Point(4, 51);
@@ -1356,6 +1358,7 @@
             // codeHeader
             // 
             this.codeHeader.Text = "Code";
+            this.codeHeader.Width = 49;
             // 
             // licenceHeader
             // 
@@ -1365,11 +1368,12 @@
             // lpHeader
             // 
             this.lpHeader.Text = "LP";
+            this.lpHeader.Width = 41;
             // 
             // typeHeader
             // 
             this.typeHeader.Text = "Type";
-            this.typeHeader.Width = 76;
+            this.typeHeader.Width = 68;
             // 
             // label1
             // 
@@ -1399,6 +1403,10 @@
             this.openFileDialog1.DefaultExt = "bin";
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "Binary | *.bin";
+            // 
+            // insertedPos
+            // 
+            this.insertedPos.Text = "@";
             // 
             // Form1
             // 
@@ -1522,6 +1530,7 @@
         private System.Windows.Forms.Label logLabel;
         private System.Windows.Forms.Button showLogBtn;
         private System.Windows.Forms.CheckBox outputLogCheck;
+        private System.Windows.Forms.ColumnHeader insertedPos;
     }
 }
 
